@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Especifica el nivel de ECMAScript que se debe usar al compilar. ES5 es bastante compatible con navegadores más antiguos.
+    "lib": [
+      "dom", // Incluye definiciones de tipo para el DOM
+      "dom.iterable", // Permite iterar sobre estructuras del DOM
+      "esnext" // Proporciona las últimas características de ECMAScript
+    ],
+    "allowJs": true, // Permite incluir archivos JavaScript
+    "skipLibCheck": true, // Omite la verificación de tipo de archivos de declaración (.d.ts)
+    "esModuleInterop": true, // Habilita la interoperabilidad entre módulos CommonJS y ES Modules
+    "allowSyntheticDefaultImports": true, // Permite importaciones por defecto de módulos que no tienen exportaciones por defecto
+    "strict": true, // Activa todas las comprobaciones estrictas
+    "forceConsistentCasingInFileNames": true, // Obliga a que el uso de mayúsculas y minúsculas en los nombres de archivo sea consistente
+    "noFallthroughCasesInSwitch": true, // Previene fallos en las declaraciones switch
+    "module": "esnext", // Especifica el sistema de módulos a usar. "esnext" es adecuado para aplicaciones modernas
+    "moduleResolution": "node", // Utiliza el algoritmo de resolución de módulos de Node.js
+    "resolveJsonModule": true, // Permite importar archivos JSON como módulos
+    "isolatedModules": true, // Asegura que cada archivo pueda ser tratado como un módulo independiente
+    "noEmit": true, // Evita que TypeScript emita archivos de salida
+    "jsx": "react-jsx" // Usa la nueva transformación JSX introducida en React 17
+  },
+  "include": [
+    "src" // Indica qué archivos se deben incluir en la compilación
+  ]
+}
